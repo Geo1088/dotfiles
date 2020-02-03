@@ -25,3 +25,6 @@ brew install thefuck
 # Set up git info
 git config --global user.name "George"
 git config --global user.email "georgej1088@gmail.com"
+
+# Copy .zshrc
+curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/.zshrc > ~/.zshrc
