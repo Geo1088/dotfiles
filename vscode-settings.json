@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Ariake Dark",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.rulers": [
+        80
+    ]
+}
