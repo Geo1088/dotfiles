@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Install Developer Tools
 xcode-select --install
 
@@ -26,3 +28,8 @@ git config --global alias.l "log --oneline --decorate --graph"
 
 # Copy .zshrc
 curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/.zshrc > ~/.zshrc
+
+# Copy over VS Code config files
+mkdir -p ~/Library/Application\ Support/Code/User # Make the settings directory in case it hasn't been installed yet
+curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/vscode-settings.json > ~/Library/Application\ Support/Code/User/settings.json
+curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/vscode-keybindings.json > ~/Library/Application\ Support/Code/User/keybindings.json
