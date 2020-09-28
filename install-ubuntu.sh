@@ -1,15 +1,16 @@
-# Install git
-sudo apt install git
+# initial update
+sudo apt update
+sudo apt upgrade
 
-# Install cURL
-sudo apt install curl
+# Install git and cURL
+sudo apt install git curl
 
 # Install nvm and use it to install node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-nvm install 12
+nvm install 14
 node --version
 
 # Install yarn
@@ -36,8 +37,3 @@ chsh
 
 # Copy .zshrc
 curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/.zshrc > ~/.zshrc
-
-# Copy over VS Code config files
-mkdir -p ~/.config/Code/User # Make the settings directory in case it hasn't been installed yet
-curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/vscode-settings.json > ~/.config/Code/User/settings.json
-curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/vscode-keybindings.json > ~/.config/Code/User/keybindings.json
