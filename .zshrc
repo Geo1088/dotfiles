@@ -1,3 +1,10 @@
+# zsh history stuff
+export HISTSIZE=10000
+export SAVEHIST=10000
+export HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+
 # Prompt configuration
 setopt PROMPT_SUBST
 parse_git_branch() {
@@ -30,5 +37,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # User program: thefuck alias
-eval "$(thefuck --alias --enable-experimental-instant-mode)"
-export THEFUCK_REQUIRE_CONFIRMATION='false'
+#eval "$(thefuck --alias --enable-experimental-instant-mode)"
+#export THEFUCK_REQUIRE_CONFIRMATION='false'
