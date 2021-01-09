@@ -22,7 +22,7 @@ git config --global alias.la "log --oneline --decorate --graph --all"
 # Install zsh and set it as the default shell
 sudo apt install zsh -y
 cat /etc/shells
-chsh
+chsh -s /bin/zsh
 
 # Copy .zshrc
 curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/.zshrc > ~/.zshrc
