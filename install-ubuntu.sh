@@ -19,10 +19,7 @@ yarn --version
 git config --global alias.l "log --oneline --decorate --graph"
 git config --global alias.la "log --oneline --decorate --graph --all"
 
-# Install zsh and set it as the default shell
+# Install zsh and stuff
 sudo apt install zsh -y
-cat /etc/shells
-chsh -s /bin/zsh
-
-# Copy .zshrc
 curl https://raw.githubusercontent.com/Geo1088/dotfiles/master/.zshrc > ~/.zshrc
+echo 'Run `chsh -s /bin/zsh` to set your login shell.'
